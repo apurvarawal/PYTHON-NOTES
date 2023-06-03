@@ -1,4 +1,4 @@
-# LISTS
+######## --- LISTS --- ########
 
 subjects = ['Hindi', 'English', 'Maths']
 
@@ -81,3 +81,66 @@ print(cars_str)
 new_list = cars_str.split(', ')   # we are splitting wherever we find ', ', if we used in ' - ' , in cars_str, then we have to split at ' - '
 
 print(new_list)
+
+
+########## --- TUPLES --- ##########
+
+# list are mutable , but tuples are immutable
+
+list_1 = ['HINDI', 'ENGLISH', 'MATHS', 'SCIENCE']
+list_2 = list_1
+
+print(list_1)
+print(list_2)
+
+list_1[1] = 'ART'
+
+print(list_1)
+print(list_2)
+
+# We can see that in case of list, values can be updated
+
+""" tuples_1 = ('HINDI', 'ENGLISH', 'MATHS', 'SCIENCE')
+tuples_2 = tuples_1
+
+print(tuples_1)
+print(tuples_2)
+
+tuples_1[1] = 'ART'
+
+print(tuples_1)
+print(tuples_2) """
+
+# but in case of tuples , we can not update values
+
+
+############ --- SETS --- ############
+
+# sets dont care about order, each time we run the program the order changes, also sets contain unique values
+
+mech_courses = {'emt', 'thermal', 'MD', 'fluids', 'heat'}
+auto_courses = {'emt', 'CAM', 'MD', 'CAD', 'heat'}
+
+print(mech_courses)
+print('thermal' in mech_courses)
+
+print(mech_courses.intersection(auto_courses))  # find the intersecting elements between 2 sets
+
+print(mech_courses.difference(auto_courses))  # find the different elements between 2 sets
+
+print(mech_courses.union(auto_courses))  # find the union of 2 sets
+
+#### EMPTY LIST 
+
+empty_list = []
+empty_list = list()
+
+#### EMPTY TUPLE
+
+empty_tuple = ()
+empty_tuple = tuple()
+
+#### EMPTY SET
+
+empty_set = {} # this is incorrect
+empty_set = set()  
